@@ -58,7 +58,7 @@ public class KRSAUtils {
      * @param model
      * @return
      */
-    public static byte[] encrypt(final byte[] bytes, int model) {
+    public static byte[] encrypt_(final byte[] bytes, int model) {
         final int length = bytes.length;
         for (int i = 0; i < length; ++i) {
             bytes[i] = (byte) (bytes[i] ^ model);
@@ -84,7 +84,7 @@ public class KRSAUtils {
 
     private static final int MAX_DECRYPT_BLOCK = 128;
 
-    private static final String PADDING="RSA/ECB/PKCS1Padding";//RSA/NONE/OAEPWithSHA1AndMGF1Padding
+    private static final String PADDING="RSA/ECB/NoPadding";//RSA/NONE/OAEPWithSHA1AndMGF1Padding   RSA/ECB/NoPadding(前端默认)   RSA/ECB/PKCS1Padding(java默认)
     public static Map<String, Object> genKeyPair() throws Exception {
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(KEY_ALGORITHM);
         keyPairGen.initialize(1024);

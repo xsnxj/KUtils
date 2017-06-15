@@ -71,6 +71,7 @@
         <!--九图预览-->
         <activity android:name="cn.kutils.view.nineimages.preview.ImagePreviewActivity"/>
         <activity android:name=".aty.DialogSample"/>
+        <activity android:name=".aty.SecurityAty"/>
     </application>
 
 </manifest>

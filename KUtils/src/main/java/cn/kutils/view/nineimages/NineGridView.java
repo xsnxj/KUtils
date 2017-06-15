@@ -237,5 +237,6 @@ public class NineGridView extends ViewGroup {
          * @return 当前框架的本地缓存图片
          */
         Bitmap getCacheImage(String url);
+
     }
 }

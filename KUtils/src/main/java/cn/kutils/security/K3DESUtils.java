@@ -16,14 +16,29 @@ import javax.crypto.spec.SecretKeySpec;
  * Created by Administrator on 2016/5/19.
  */
 public class K3DESUtils {
-    private static String encryptTypeName = null;/*算法名称  DESede /..*/
+    private static String encryptTypeName = null;//算法名称  可用 DES,DESede,Blowfish
     private static int keySize = -1;/*密钥长度*/
     private static String workMode = null;//工作模式和填充模式
 
     /**
-     * @param encryptTypeName 算法名称
-     * @param keySize         密钥长度
-     * @param workMode        工作模式和填充模式
+     * @param encryptTypeName 算法名称  可用 DES,DESede,Blowfish
+     * @param keySize         密钥长度  一般指定24
+     * @param workMode        工作模式和填充模式()算法/模式/填充                    16字节加密后数据长度         不满16字节加密后长度
+     *                        AES/CBC/NoPadding             16                         不支持
+     *                        AES/CBC/PKCS5Padding          32                         16
+     *                        AES/CBC/ISO10126Padding       32                          16
+     *                        AES/CFB/NoPadding             16                          原始数据长度
+     *                        AES/CFB/PKCS5Padding          32                          16
+     *                        AES/CFB/ISO10126Padding       32                          16
+     *                        AES/ECB/NoPadding             16                          不支持
+     *                        AES/ECB/PKCS5Padding          32                          16
+     *                        AES/ECB/ISO10126Padding       32                          16
+     *                        AES/OFB/NoPadding             16                          原始数据长度
+     *                        AES/OFB/PKCS5Padding          32                          16
+     *                        AES/OFB/ISO10126Padding       32                          16
+     *                        AES/PCBC/NoPadding            16                          不支持
+     *                        AES/PCBC/PKCS5Padding         32                          16
+     *                        AES/PCBC/ISO10126Padding      32                          16
      * @return
      */
     public static boolean setKeyInfo(String encryptTypeName, int keySize, String workMode) {
@@ -49,7 +64,7 @@ public class K3DESUtils {
 
 //            V.d("密钥生成成功,(secretKey.getFormat()):" + secretKey.getFormat());
 //            V.d("-------"+secretKey.toString());
-                    return secretKey.getEncoded();
+            return secretKey.getEncoded();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
 //            V.e("3Des加密密钥生成失败，" + e.getMessage());

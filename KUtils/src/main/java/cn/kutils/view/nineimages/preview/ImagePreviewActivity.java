@@ -42,7 +42,7 @@ public class ImagePreviewActivity extends Activity implements ViewTreeObserver.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
         final TextView tv_pager = (TextView) findViewById(R.id.tv_pager);
         rootView = (RelativeLayout) findViewById(R.id.rootView);
 
@@ -68,6 +68,7 @@ public class ImagePreviewActivity extends Activity implements ViewTreeObserver.O
         });
         tv_pager.setText(String.format(getString(R.string.select), currentItem + 1, imageInfo.size()));
     }
+
 
     @Override
     public void onBackPressed() {

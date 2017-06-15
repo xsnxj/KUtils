@@ -1,0 +1,138 @@
+{
+    "android_gradle_plugin_version": "2.3.3",
+    "apk_path": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/build/outputs/apk/Sample-debug.apk",
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/build/freeline",
+    "build_directory": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/build",
+    "build_script": "./gradlew :Sample:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/zhaowenyun/Library/Android/sdk/build-tools/25.0.3",
+    "build_tools_version": "25.0.3",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "/Users/zhaowenyun/Library/Android/sdk/platforms/android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "cn.kutils.sample",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/zhaowenyun/Desktop/KUtilsSample",
+    "freeline_gradle_plugin_version": "0.8.7",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home",
+    "launcher": "cn.kutils.sample.MainActivity",
+    "main_assets_directory": [
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/assets",
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/jniLibs",
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/jniLibs"
+    ],
+    "main_jni_directory": [
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/jni",
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/AndroidManifest.xml",
+    "main_project_dir": "Sample",
+    "main_project_name": "Sample",
+    "main_r_path": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/build/generated/source/r/debug/R.java",
+    "main_res_directory": [
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/res",
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/java",
+        "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/java"
+    ],
+    "module_dependencies": {
+        "KUtils": [
+            
+        ],
+        "Sample": [
+            "KUtils"
+        ]
+    },
+    "modules": [
+        {
+            "name": "Sample",
+            "path": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample"
+        },
+        {
+            "name": "KUtils",
+            "path": "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils"
+        }
+    ],
+    "package": "cn.kutils.sample",
+    "product_flavor": "",
+    "project_source_sets": {
+        "KUtils": {
+            "main_assets_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/release/assets",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/release/jniLibs",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/release/jni",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/release/res",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/release/java",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/KUtils/src/main/java"
+            ]
+        },
+        "Sample": {
+            "main_assets_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/assets",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/jniLibs",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/jni",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/res",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/debug/java",
+                "/Users/zhaowenyun/Desktop/KUtilsSample/Sample/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "root_dir": "/Users/zhaowenyun/Desktop/KUtilsSample",
+    "sdk_directory": "/Users/zhaowenyun/Library/Android/sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}

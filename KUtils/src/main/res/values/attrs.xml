@@ -43,4 +43,21 @@
             <enum name="grid" value="1"/>
         </attr>
     </declare-styleable>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--checkbox-->
+    <declare-styleable name="CircleCheckBox">
+        <attr name="checked" format="boolean"/>
+        <attr name="animation_duration" format="integer"/>
+        <attr name="tick_width" format="dimension"/>
+        <attr name="border_width_checkbox" format="dimension"/>
+        <attr name="tick_color" format="color"/>
+        <attr name="border_color_checkbox" format="color"/>
+        <attr name="background_color" format="color"/>
+    </declare-styleable>
 </resources>

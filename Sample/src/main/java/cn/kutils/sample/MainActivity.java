@@ -2,11 +2,11 @@ package cn.kutils.sample;
 
 import android.Manifest;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
@@ -17,6 +17,7 @@ import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.callback.AbsCallback;
+import com.lzy.okgo.callback.BitmapCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,7 @@ import cn.kutils.sample.aty.MediaUseAty;
 import cn.kutils.sample.aty.NineImagesAty;
 import cn.kutils.sample.aty.PickerSampleAty;
 import cn.kutils.sample.aty.ProgressButtonAty;
+import cn.kutils.sample.aty.SecurityAty;
 import cn.kutils.sample.aty.TwoActivity;
 import cn.kutils.sample.bean.MainTab;
 import cn.kutils.sample.bean.User;
@@ -98,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         l.add(new MainTab("九图预览与图片压缩", 6));
         l.add(new MainTab("共享参数读写测试", 7));
         l.add(new MainTab("对话框测试", 8));
+        l.add(new MainTab("加解密测试", 9));
 
 
         mAdapter.setNewData(l);
@@ -142,6 +145,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, DialogSample.class));
 
                         break;
+                    case 9:
+                        startActivity(new Intent(MainActivity.this, SecurityAty.class));
+
+                        break;
+
 
                 }
             }
@@ -206,15 +214,15 @@ public class MainActivity extends AppCompatActivity {
     @Subscriber()
     public void OnEventBus(User user) {
         KLog.d("EventBus未使用tag收到User:" + user);
-        OkGo.post("url").params("key", "v").execute(new AbsCallback<User>() {
+        OkGo.<User>post("url").params("key", "v").execute(new AbsCallback<User>() {
             @Override
-            public void onSuccess(User user, Call call, Response response) {
-
+            public User convertResponse(Response response) throws Throwable {
+                return null;
             }
 
             @Override
-            public User convertSuccess(Response response) throws Exception {
-                return null;
+            public void onSuccess(com.lzy.okgo.model.Response<User> response) {
+
             }
         });
     }

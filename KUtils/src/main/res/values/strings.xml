@@ -46,4 +46,11 @@
     <string name="pickerview_seconds">秒</string>
 
     <string name="select">%1$s/%2$s</string>
+
+
+
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="no_url">No mUrl</string>
 </resources>
