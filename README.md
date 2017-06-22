@@ -1,4 +1,4 @@
-KUtils(代码来源第三方,只做代码搬运工) 
+KUtils(如下所有代码来源第三方,只做代码搬运工) 
 ========
 android快速开发常用第三方库整合,集成了优雅的日志打印(可自动格式化json,xml,日志输出无字符长度4000的限制),两行代码调用EventBus事件分发,okgo网络访问一行代码实现文件上传下载带进度,上送json xml 等参数,可设置缓存模式以及SSL认证等,万能的RecyclerView适配器BaseQuicklyAdapter,实现上啦刷新,下拉加载,item不同布局,一行代码设置头布局和脚布局.瀑布流,多媒体选择库,photoview图片预览,activity管理类,android端加解密工具类,CircleImageView圆角用户头像,android6.0权限检测
 

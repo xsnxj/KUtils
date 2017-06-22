@@ -41,6 +41,7 @@ import cn.kutils.sample.aty.PickerSampleAty;
 import cn.kutils.sample.aty.ProgressButtonAty;
 import cn.kutils.sample.aty.SecurityAty;
 import cn.kutils.sample.aty.TwoActivity;
+import cn.kutils.sample.aty.VideoPlayerSample;
 import cn.kutils.sample.bean.MainTab;
 import cn.kutils.sample.bean.User;
 import cn.kutils.view.CircleImageView;
@@ -101,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
         l.add(new MainTab("共享参数读写测试", 7));
         l.add(new MainTab("对话框测试", 8));
         l.add(new MainTab("加解密测试", 9));
+        l.add(new MainTab("多媒体", 10));
 
 
         mAdapter.setNewData(l);
@@ -149,7 +151,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, SecurityAty.class));
 
                         break;
+                    case 10:
+                        startActivity(new Intent(MainActivity.this, VideoPlayerSample.class));
 
+                        break;
 
                 }
             }

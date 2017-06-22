@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.3"
@@ -9,7 +9,7 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        resValue "string", "tray__authority", "com.ty.trafficmanager"
+        resValue "string", "tray__authority", "cn.kutils.sample"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -19,6 +19,18 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    //忽略打包时的错误信息
+    lintOptions {
+        abortOnError false
+    }
+    publish {
+        userOrg = 'devzwy'      //bintray注册的用户名
+        groupId = 'com.zwy'         //compile引用时的第1部分groupId
+        artifactId = 'kutils'     //compile引用时的第2部分项目名
+        publishVersion = '1.0.1'    //compile引用时的第3部分版本号
+        desc = 'This is a android libs '
+        website = 'https://github.com/devzwy/KUtils'
     }
 }
 

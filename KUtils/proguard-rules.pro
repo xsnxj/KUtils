@@ -23,3 +23,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# mavenkey=d8f3fa13bc7f8a26ac98e4456045c914321f622a
+
+# ./gradlew clean build bintrayUpload -PbintrayUser=devzwy -PbintrayKey=d8f3fa13bc7f8a26ac98e4456045c914321f622a -PdryRun=false
